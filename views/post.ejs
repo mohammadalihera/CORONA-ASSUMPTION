@@ -1,0 +1,102 @@
+<%- include('partials/header'); -%>
+  <h1>Corona Update</h1>
+  <% for(var i=0;i<posts.lenght;i++){ %>     
+           <% if(posts[i].sym1==ture){%>
+              <%posts[i].score=3; %>
+              <% if(posts[i].sym2){ %>
+                <% posts[i].score=posts[i].score+1; %>
+              <%}%>
+              <%if(posts[i].sym3){ %>
+                 <%posts[i].score=posts[i].score+1; %>
+              <%}%>
+              <%if(posts[i].sym4){%>
+                 <%posts[i].score=posts[i].score+1; %>
+              <%}%>
+              <%if(posts[i].sym5){%>
+                <% posts[i].score=posts[i].score+1; %>
+              <%}%>
+           <%}%>
+           
+
+        <% } %>
+
+  
+
+  <table border="1" cellpadding="7" cellspacing="7" class="table">
+		  <tr>
+		    <th width="50px">No</th>
+		    <th>Name</th>
+		    <th>Sex</th>
+		    <th>Age</th>
+		    <th>Temperature</th>
+		    <th>Assessment Date</th>
+		    <th>Assessment Score</th>
+		    <th>Covid-19 Result</th>
+		  </tr>
+		  <% if(posts.length){ 
+		    for(var i = 0;i < posts.length;i++) { %>
+		        <% if(posts[i].sym1){%>
+              <%posts[i].score=3; %>
+              <% if(posts[i].sym2){ %>
+                <% posts[i].score=posts[i].score+1; %>
+              <%}%>
+              <%if(posts[i].sym3){ %>
+                 <%posts[i].score=posts[i].score+1; %>
+              <%}%>
+              <%if(posts[i].sym4){%>
+                 <%posts[i].score=posts[i].score+1; %>
+              <%}%>
+              <%if(posts[i].sym5){%>
+                <% posts[i].score=posts[i].score+1; %>
+              <%}%>
+            <%}%>
+
+            <% if(posts[i].ads1){%>
+              <%posts[i].score=posts[i].score+2; %>
+              <% if(posts[i].ads2){ %>
+                <% posts[i].score=posts[i].score+2; %>
+              <%}%>
+              <%if(posts[i].ads3){ %>
+                 <%posts[i].score=posts[i].score+2; %>
+              <%}%>
+              <%if(posts[i].ads4){%>
+                 <%posts[i].score=posts[i].score+2; %>
+              <%}%>
+              <%if(posts[i].ads5){%>
+                <% posts[i].score=posts[i].score+2; %>
+              <%}%>
+              <%if(posts[i].ads6){%>
+                <% posts[i].score=posts[i].score+2; %>
+              <%}%>
+              <%if(posts[i].ads7){%>
+                <% posts[i].score=posts[i].score+2; %>
+              <%}%>
+              <%if(posts[i].ads8){%>
+                <% posts[i].score=posts[i].score+2; %>
+              <%}%>
+            <%}%>
+            <% if(posts[i].score>=5){%>
+              <% posts[i].result='Positive'; %>
+
+            <%}%>
+            
+
+		  <tr>
+		    <td><a href="/post/<%=posts._id %>"><%=(i+1)%></a>%></td>
+		    <td><%=posts[i].name%></td>
+		    <td><%=posts[i].sex%></td>
+		    <td><%=posts[i].age%></td>
+		    <td><%=posts[i].body_tmeperature%></td>
+		    <td><%=posts[i].date%></td>
+		    <td><%=posts[i].score%></td>
+		    <td><%=posts[i].result%></td>
+		  </tr>
+		  <% }
+		  }else{ %>
+		  <tr>
+		    <td colspan="3">No user</td>
+		  </tr>
+		<% } %>
+  </table>
+
+  <a class="btn btn-primary btn-large" href="/post/new">Check yourself</a>

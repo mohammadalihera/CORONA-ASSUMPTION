@@ -1,0 +1,196 @@
+<%- include('partials/header'); -%>
+		    <div class="ui main text container segment" style="width:420px; height:500px;">
+		        <h2 class="ui huge header">Give your health information</h2>	
+				<form class="ui form" action="/post" method="POST">
+					<div class="field">
+					   <label><b>Name<b></label>
+						<input class="form-control" type="text" name="name" placeholder="name">
+					</div>
+					<div class="field">
+					   <label><b>Age</b></label>
+						<input class="form-control" type="text" name="age" placeholder="Age">
+				    </div>
+				    <div class="field">
+				      <label><b>Sex<b></label>
+						<input class="form-control" type="text" name="sex" placeholder="Sex">
+				    </div>
+				    <div class="field">
+				      <label><b>Body Temparature<b></label>
+						<input class="form-control" type="text" name="body_tmeperature" placeholder="Body Temparature">
+				    </div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Symptom1</b></label>
+				        <select name="sym1" name="symp1">
+				           <option value=""></option>
+                          <option value="Breathing problem">Breathing problem</option>
+                          <option value="Dry cough">Dry cough</option>
+                          <option value="Sore throat">Sore throat</option>
+                          <option value="Weakness">Weakness</option>
+                          <option value="Runny nose">Runny nose</option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Symptom2</b></label>
+				        <select name="sym2" name="symp2">
+				          <option value=""></option>
+                          <option value="Breathing problem">Breathing problem</option>
+                          <option value="Dry cough">Dry cough</option>
+                          <option value="Sore throat">Sore throat</option>
+                          <option value="Weakness">Weakness</option>
+                          <option value="Runny nose">Runny nose</option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Symptom3</b></label>
+				        <select name="sym3" name="symp3">
+				          <option value=""></option>
+                          <option value="Breathing problem">Breathing problem</option>
+                          <option value="Dry cough">Dry cough</option>
+                          <option value="Sore throat">Sore throat</option>
+                          <option value="Weakness">Weakness</option>
+                          <option value="Runny nose">Runny nose</option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Symptom4</b></label>
+				        <select name="sym4">
+				           <option value=""></option>
+                          <option value="Breathing problem">Breathing problem</option>
+                          <option value="Dry cough">Dry cough</option>
+                          <option value="Sore throat">Sore throat</option>
+                          <option value="Weakness">Weakness</option>
+                          <option value="Runny nose">Runny nose</option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Symptom5</b></label>
+				        <select name="sym5">
+				           <option value=""></option>
+                          <option value="Breathing problem">Breathing problem</option>
+                          <option value="Dry cough">Dry cough</option>
+                          <option value="Sore throat">Sore throat</option>
+                          <option value="Weakness">Weakness</option>
+                          <option value="Runny nose">Runny nose</option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Additional Symptom1</b></label>
+				        <select name="adsym1">
+				           <option value=""></option>
+                          <option value="Abdominal pain">Abdominal pain</option>
+                          <option value="Vomiting">Vomiting</option>
+                          <option value="Diarrhoea">Diarrhoea</option>
+                          <option value="Chest pain or pressure">Chest pain or pressure</option>
+                          <option value="Muscle pain">Muscle pain</option>
+                          <option value="Loss of taste or smell">Loss of taste or smell</option>
+                          <option value="Rash on skin, or discoloration of fingers or toes">Rash on skin, or discoloration of fingers or toes</option>
+                          <option value="Loss of speech or movement">Loss of speech or movement/option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Additional Symptom2</b></label>
+				        <select name="adsym2">
+				          <option value=""></option>
+                          <option value="Abdominal pain">Abdominal pain</option>
+                          <option value="Vomiting">Vomiting</option>
+                          <option value="Diarrhoea">Diarrhoea</option>
+                          <option value="Chest pain or pressure">Chest pain or pressure</option>
+                          <option value="Muscle pain">Muscle pain</option>
+                          <option value="Loss of taste or smell">Loss of taste or smell</option>
+                          <option value="Rash on skin, or discoloration of fingers or toes">Rash on skin, or discoloration of fingers or toes</option>
+                          <option value="Loss of speech or movement">Loss of speech or movement/option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Additional Symptom3</b></label>
+				        <select name="adsym3">
+				          <option value=""></option>
+                          <option value="Abdominal pain">Abdominal pain</option>
+                          <option value="Vomiting">Vomiting</option>
+                          <option value="Diarrhoea">Diarrhoea</option>
+                          <option value="Chest pain or pressure">Chest pain or pressure</option>
+                          <option value="Muscle pain">Muscle pain</option>
+                          <option value="Loss of taste or smell">Loss of taste or smell</option>
+                          <option value="Rash on skin, or discoloration of fingers or toes">Rash on skin, or discoloration of fingers or toes</option>
+                          <option value="Loss of speech or movement">Loss of speech or movement/option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Additional Symptom4</b></label>
+				        <select name="adsym4">
+				          <option value=""></option>
+                          <option value="Abdominal pain">Abdominal pain</option>
+                          <option value="Vomiting">Vomiting</option>
+                          <option value="Diarrhoea">Diarrhoea</option>
+                          <option value="Chest pain or pressure">Chest pain or pressure</option>
+                          <option value="Muscle pain">Muscle pain</option>
+                          <option value="Loss of taste or smell">Loss of taste or smell</option>
+                          <option value="Rash on skin, or discoloration of fingers or toes">Rash on skin, or discoloration of fingers or toes</option>
+                          <option value="Loss of speech or movement">Loss of speech or movement/option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Additional Symptom5</b></label>
+				        <select name="adsym5">
+				          <option value=""></option>
+                          <option value="Abdominal pain">Abdominal pain</option>
+                          <option value="Vomiting">Vomiting</option>
+                          <option value="Diarrhoea">Diarrhoea</option>
+                          <option value="Chest pain or pressure">Chest pain or pressure</option>
+                          <option value="Muscle pain">Muscle pain</option>
+                          <option value="Loss of taste or smell">Loss of taste or smell</option>
+                          <option value="Rash on skin, or discoloration of fingers or toes">Rash on skin, or discoloration of fingers or toes</option>
+                          <option value="Loss of speech or movement">Loss of speech or movement/option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Additional Symptom6</b></label>
+				        <select name="adsym6">
+				           <option value=""></option>
+                          <option value="Abdominal pain">Abdominal pain</option>
+                          <option value="Vomiting">Vomiting</option>
+                          <option value="Diarrhoea">Diarrhoea</option>
+                          <option value="Chest pain or pressure">Chest pain or pressure</option>
+                          <option value="Muscle pain">Muscle pain</option>
+                          <option value="Loss of taste or smell">Loss of taste or smell</option>
+                          <option value="Rash on skin, or discoloration of fingers or toes">Rash on skin, or discoloration of fingers or toes</option>
+                          <option value="Loss of speech or movement">Loss of speech or movement/option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Additional Symptom7</b></label>
+				        <select name="adsym7">
+				          <option value=""></option>
+                          <option value="Abdominal pain">Abdominal pain</option>
+                          <option value="Vomiting">Vomiting</option>
+                          <option value="Diarrhoea">Diarrhoea</option>
+                          <option value="Chest pain or pressure">Chest pain or pressure</option>
+                          <option value="Muscle pain">Muscle pain</option>
+                          <option value="Loss of taste or smell">Loss of taste or smell</option>
+                          <option value="Rash on skin, or discoloration of fingers or toes">Rash on skin, or discoloration of fingers or toes</option>
+                          <option value="Loss of speech or movement">Loss of speech or movement/option>
+                        </select>
+					</div>
+					<div class="field" style="padding-bottom:20px;">
+					    <label><b>Additional Symptom8</b></label>
+				        <select name="adsym8">
+				          <option value=""></option>
+                          <option value="Abdominal pain">Abdominal pain</option>
+                          <option value="Vomiting">Vomiting</option>
+                          <option value="Diarrhoea">Diarrhoea</option>
+                          <option value="Chest pain or pressure">Chest pain or pressure</option>
+                          <option value="Muscle pain">Muscle pain</option>
+                          <option value="Loss of taste or smell">Loss of taste or smell</option>
+                          <option value="Rash on skin, or discoloration of fingers or toes">Rash on skin, or discoloration of fingers or toes</option>
+                          <option value="Loss of speech or movement">Loss of speech or movement/option>
+                        </select>
+					</div>
+					<div class="field">
+				      <label><b>Assessment Date<b></label>
+						<input class="form-control" type="text" name="date" placeholder="Assessment Date">
+				    </div>
+					<div class="field" style="padding-bottom:50px;">
+					    <button class="btn btn-lg btn-primary btn-block">Submit</button>
+				    </div>
+				</form>
+	        </div>
